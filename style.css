@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --first-color1: #2F366A;
+    --first-color2: #14B1FD;
+    --second-color1: #FFFFFF;
+    --second-color2: #01EEBA;
+    --third-color: #2F366A;
+}
+
+body {
+    background-color: var(--first-color2);
+    height: 100vh;
+}
+
+nav {
+    height: 30vh;
+    width: 100%;
+    background-color: var(--first-color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+nav .image{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 10vh;
+}
+
+nav  img{
+    margin-left: 100px;
+    margin-top: 2vh;
+}
+
+nav h2 {
+    /* text-align: center; */
+    color: var(--second-color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+
+
+@media(max-width:800px) {
+    nav img {
+        margin-left: 80px;
+        margin-top: 2vh;
+    }
+}
+
+@media(min-width:1000px) {
+    nav img {
+        margin-left: 100px;
+        margin-top: 2vh;
+    }
+}
+
+@media(max-width:500px) {
+    nav h2 {
+        /* text-align: center; */
+        color: var(--second-color1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 12px;
+        font-size: 20px;
+    }
+
+    nav img {
+        margin-left: 15px;
+        margin-top: 2vh;
+    }
+}
+
+.container {
+    margin: 20px 40px;
+    height: 70vh;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+img {
+    height: 90px;
+    width: 110px;
+}
+
+.container p {
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    color: var(--second-color1);
+}
+
+.footer-body {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.footer-body h3 {
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
